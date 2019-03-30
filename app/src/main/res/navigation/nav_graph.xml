@@ -19,6 +19,18 @@
             android:name="com.nbmoody.fragmentation.FragmentTheSecond"
             android:label="fragment_the_second"
             tools:layout="@layout/fragment_the_second">
+        <action
+                android:id="@+id/action_fragmentTheSecond_to_fragmentTheThird"
+                app:destination="@id/fragmentTheThird"/>
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentTheThird"
+            android:name="com.nbmoody.fragmentation.FragmentTheThird"
+            android:label="fragment_the_third"
+            tools:layout="@layout/fragment_the_third">
+        <action
+                android:id="@+id/action_fragmentTheThird_to_fragmentTheFirst"
+                app:destination="@id/fragmentTheFirst"/>
     </fragment>
 
     <!-- An Example Fragment Destination in the Navigation Graph -->

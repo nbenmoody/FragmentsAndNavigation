@@ -2,6 +2,8 @@ package com.nbmoody.fragmentation
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
 
 class MainActivity : AppCompatActivity() {
 
