@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/fragmentTheFirst">
+
+    <fragment
+            android:id="@+id/fragmentTheFirst"
+            android:name="com.nbmoody.fragmentation.FragmentTheFirst"
+            android:label="fragment_the_first"
+            tools:layout="@layout/fragment_the_first">
+        <action
+                android:id="@+id/action_fragmentTheFirst_to_fragmentTheSecond"
+                app:destination="@id/fragmentTheSecond"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/fragmentTheSecond"
+            android:name="com.nbmoody.fragmentation.FragmentTheSecond"
+            android:label="fragment_the_second"
+            tools:layout="@layout/fragment_the_second">
+    </fragment>
+
+    <!-- An Example Fragment Destination in the Navigation Graph -->
+    <!--<fragment-->
+            <!--android:id="@+id/fragmentTheSecond"                         The id used within app to reference this specific destination (not fragment). -->
+            <!--android:name="com.nbmoody.fragmentation.FragmentTheSecond"  The name of the Fragment class being used. -->
+            <!--android:label="fragment_the_second"                         The name of this fragment's layout. -->
+            <!--tools:layout="@layout/fragment_the_second">                 The line used by the Navigation Editor to create the thumbnail-preview of the destination. -->
+    <!--</fragment>-->
+
+
+
+</navigation>
