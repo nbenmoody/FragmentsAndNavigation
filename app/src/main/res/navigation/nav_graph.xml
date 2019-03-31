@@ -11,7 +11,9 @@
             tools:layout="@layout/fragment_the_first">
         <action
                 android:id="@+id/action_fragmentTheFirst_to_fragmentTheSecond"
-                app:destination="@id/fragmentTheSecond"/>
+                app:destination="@id/fragmentTheSecond"
+                app:enterAnim="@anim/slide_in_right"
+                app:popEnterAnim="@anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -21,7 +23,9 @@
             tools:layout="@layout/fragment_the_second">
         <action
                 android:id="@+id/action_fragmentTheSecond_to_fragmentTheThird"
-                app:destination="@id/fragmentTheThird"/>
+                app:destination="@id/fragmentTheThird"
+                app:enterAnim="@anim/slide_in_right"
+                app:popEnterAnim="@anim/slide_in_left"/>
     </fragment>
     <fragment
             android:id="@+id/fragmentTheThird"
@@ -30,7 +34,9 @@
             tools:layout="@layout/fragment_the_third">
         <action
                 android:id="@+id/action_fragmentTheThird_to_fragmentTheFirst"
-                app:destination="@id/fragmentTheFirst"/>
+                app:destination="@id/fragmentTheFirst"
+                app:enterAnim="@anim/slide_in_right"
+                app:popEnterAnim="@anim/slide_in_left"/>
     </fragment>
 
     <!-- An Example Fragment Destination in the Navigation Graph -->
